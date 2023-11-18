@@ -1,5 +1,11 @@
-
+import React, {useState} from "react";
 const EventForm = () => {
+    const [selectedLocation, setSelectedLocation] = useState('KA');
+
+    const handleLocationChange = (event) => {
+        setSelectedLocation(event.target.value);
+      };
+
     const data ={
         "KA": [
           { "event": "Riding a horse", "time": "2023-11-27 10:39:52.315189" },
@@ -17,13 +23,22 @@ const EventForm = () => {
         ]
       }
 
+    const selectedEvents = data[selectedLocation];
+
     return(
         <div className="event-form-container">
       <div className="data-list">
         {/* Display events for "KA" */}
-        <h2>Events in KA:</h2>
+        <h2>Events in {selectedLocation}:</h2>
+        <label>
+          Select Location:
+          <select value={selectedLocation} onChange={handleLocationChange}>
+            <option value="KA">KA</option>
+            <option value="FR">FR</option>
+          </select>
+        </label>
         <ul>
-          {data["KA"].map((event, index) => (
+          {selectedEvents.map((event, index) => (
             <li key={index}>{`Event: ${event.event}, Time: ${event.time}`}</li>
           ))}
         </ul>
