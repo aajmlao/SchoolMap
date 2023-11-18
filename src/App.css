@@ -2,7 +2,9 @@
   text-align: center;
   position: relative;
 }
-
+.marker div{
+  z-index: 100;
+}
 img {
   position: absolute;
   height: 100vh;
