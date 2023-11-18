@@ -1,16 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React, {useEffect, useState} from 'react';
+import EventForm from './Component/events';
 
 function App() {
-  
-  
+
   return (
     <div className="App">
-      <header className="App-header">
         <img src='campus.png'/>
-      
-      </header>
+      <EventForm />
     </div>
   );
 }
