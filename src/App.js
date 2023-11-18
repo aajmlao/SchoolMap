@@ -1,8 +1,12 @@
 import './App.css';
 import LocationPhoto from './MapUI';
-import RenderMarker from './RenderMaker';
+import EventForm from './Component/events';
+import { useState } from 'react';
+import locations from './location.json'
+
 
 function App() {
+  const [state, setState] = useState(null)
   const map = 'campus.png';
   const originalRes = {
     height: 1150,
@@ -17,14 +21,8 @@ function App() {
   const widthRatio = displayedRes.width / originalRes.width;
   const heightRatio = displayedRes.height / originalRes.height;
 
-  const buildings = [
-    { id: 'LME', coordinates: { x: 1024 * widthRatio, y: 204 * heightRatio } },
-    { id: 'LV', coordinates: { x: 1026 * widthRatio, y: 122 * heightRatio } },
-    { id: 'LM', coordinates: { x: 688 * widthRatio, y: 261 * heightRatio } },
-    { id: 'FR', coordinates: { x: 523 * widthRatio, y: 760 * heightRatio } },
-    { id: 'GL', coordinates: { x: 629 * widthRatio, y: 732 * heightRatio } },
-    { id: 'KO', coordinates: { x: 262 * widthRatio, y: 695 * heightRatio } },
-  ]
+  const buildings = Object.entries(locations).map(([id, coordinates]) => ({ id, x: coordinates[0] * widthRatio, y: coordinates[1] * heightRatio }));
+  console.log(buildings);
 
   const threshold = 25;
 
@@ -32,25 +30,29 @@ function App() {
     let closestBuildingId;
     let closest = 25;
     for (let i = 0; i < buildings.length; i++) {
-      let distance = Math.sqrt(Math.pow((x - buildings[i].coordinates.x), 2) + Math.pow((y - buildings[i].coordinates.y), 2));
+      let distance = Math.sqrt(Math.pow((x - buildings[i].x), 2) + Math.pow((y - buildings[i].y), 2));
       if (distance < closest) {
         closest = distance;
         closestBuildingId = buildings[i].id;
       }
     }
+    if (closest < threshold)
+      setState(closestBuildingId)
+    else
+      setState(null)
+
+    // if (closestBuildingId) {
     console.log(`x: ${x}, y:${y}, closest building: ${closestBuildingId}`);
+    // }
   }
 
   return (
     <div className="App">
-      <header className="App-header">
-        <LocationPhoto
-          imageUrl={map}
-          onMapClick={handleMapClick}
-           />
-        
-      </header>
-      {/* <RenderMarker/> */}
+      <LocationPhoto
+        imageUrl={map}
+        onMapClick={handleMapClick} />
+      <EventForm selected={state} />
+
     </div>
   );
 }
