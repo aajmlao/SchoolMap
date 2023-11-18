@@ -15,7 +15,9 @@ const LocationPhoto = ({ imageUrl, onMapClick }) => {
 
   return (
     <div className="location-photo-container" onClick={(event) => handleClick(event)}>
-      <img src={imageUrl} alt="Location" className="location-photo" />
+      <div className="centered-image-wrapper">
+        <img src={imageUrl} alt="Location" className="location-photo" />
+      </div>
     </div>
   );
 };

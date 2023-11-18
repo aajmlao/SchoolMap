@@ -17,7 +17,7 @@ function App() {
   const heightRatio = displayedRes.height / originalRes.height;
 
   const buildings = [
-    { id: 'LME', coordinates: { x: 1024 * widthRatio, y: 204 * heightRatio } },
+    { id: 'LME', coordinates: { x: 1024 * widthRatio, y: 295.7 * heightRatio } },
     { id: 'LV', coordinates: { x: 1026 * widthRatio, y: 122 * heightRatio } },
     { id: 'LM', coordinates: { x: 688 * widthRatio, y: 261 * heightRatio } },
     { id: 'FR', coordinates: { x: 523 * widthRatio, y: 760 * heightRatio } },
@@ -37,7 +37,10 @@ function App() {
         closestBuildingId = buildings[i].id;
       }
     }
+
+    // if (closestBuildingId) {
     console.log(`x: ${x}, y:${y}, closest building: ${closestBuildingId}`);
+    // }
   }
 
   return (
