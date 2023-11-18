@@ -11,20 +11,51 @@ img {
 }
 .event-form-container {
   display: flex;
+  transition: 1s;
+}
+
+.event-form-container-hidden {
+  display: flex;
+  transition: 1s;
+  transform: translateX(-100%);
 }
 
 .data-list {
   position: absolute;
   height: 100vh;
-  top: 0;
-  left: 0;
   width: 300px;
-  z-index: 2; 
+  z-index: 1; 
   background-color: #f7f7f7; /* Set the background color */
-  padding-right: 20px; /* Add padding for spacing */
-  margin-right: 20px; /* Adjust the margin for spacing from the right */
+ 
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
 }
 
+.data-list.FR {
+  transform: translateX(-100%);
+}
+.events-list {
+  list-style: none;
+  padding: 0;
+}
+
+.events-list li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.events-list li strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.events-list li span {
+  font-size: 14px;
+  color: #ccc;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -59,4 +90,5 @@ img {
   to {
     transform: rotate(360deg);
   }
+
 }

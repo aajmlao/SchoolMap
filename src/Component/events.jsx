@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-// import data from './events.json'
 
 const EventForm = ({selected}) => {
    
@@ -195,15 +194,13 @@ const EventForm = ({selected}) => {
         ]
       }
       
-      
+    
 
-
-    const selectedEvents = data[selected];
+    let selectedEvents = selected ? data[selected]: [];
 
     return(
-        <>
-        {selected &&
-        <div className="event-form-container">
+        
+    <div className={selected ? "event-form-container":"event-form-container-hidden"}>
       <div className="data-list">
         {/* Display events for "KA" */}
         <h2>Events in {selected}:</h2>
@@ -214,8 +211,8 @@ const EventForm = ({selected}) => {
         </ul>
       </div>
     </div>
-    }
-    </>
+
+
   );
 };
 
