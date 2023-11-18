@@ -1,5 +1,6 @@
 import './App.css';
 import LocationPhoto from './MapUI';
+import RenderMarker from './RenderMaker';
 
 function App() {
   const map = 'campus.png';
@@ -45,8 +46,11 @@ function App() {
       <header className="App-header">
         <LocationPhoto
           imageUrl={map}
-          onMapClick={handleMapClick} />
+          onMapClick={handleMapClick}
+           />
+        
       </header>
+      {/* <RenderMarker/> */}
     </div>
   );
 }
