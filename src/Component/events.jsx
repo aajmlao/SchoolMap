@@ -8,19 +8,26 @@ const EventForm = () => {
 
     const data ={
         "KA": [
-          { "event": "Riding a horse", "time": "2023-11-27 10:39:52.315189" },
-          { "event": "Jump off the cliff", "time": "2023-11-27 10:39:52.315189" },
-          { "event": "Jump off the building", "time": "2023-11-27 10:39:52.315189" },
-          { "event": "Sky diving", "time": "2023-11-22 10:39:52.315189" },
-          { "event": "Jump off the cliff", "time": "2023-11-24 10:39:52.315189" }
+          { "event": "Riding a horse", "time": "2023-11-27 10:45:00" },
+          { "event": "Jump off the cliff", "time": "2023-11-28 11:39:00" },
+          { "event": "Jump off the building", "time": "2023-10-1 12:00:00" },
+          { "event": "Sky diving", "time": "2023-11-22 12:00:00" },
+          { "event": "Jump off the cliff", "time": "2023-11-24 13:00:00" }
         ],
         "FR": [
-          { "event": "Sky diving", "time": "2023-11-23 10:39:52.315189" },
-          { "event": "Jump off the cliff", "time": "2023-11-22 10:39:52.315189" },
-          { "event": "Sky diving", "time": "2023-11-21 10:39:52.315189" },
-          { "event": "Sky diving", "time": "2023-11-18 10:39:52.315189" },
-          { "event": "Sky diving", "time": "2023-11-27 10:39:52.315189" }
-        ]
+          { "event": "Sky diving", "time": "2023-11-27 10:45:00" },
+          { "event": "Jump off the cliff", "time": "2023-11-28 11:39:00" },
+          { "event": "Sky diving", "time": "2023-10-1 12:00:00" },
+          { "event": "Sky diving", "time": "2023-11-22 12:00:00" },
+          { "event": "Sky diving", "time": "2023-11-24 13:00:00" }
+        ],
+        "LS": [
+            { "event": "Speaker: Jones", "time": "2023-11-24 13:00:00" },
+            { "event": "Jump off the cliff", "time": "2023-10-1 12:00:00" },
+            { "event": "Sky diving", "time": "2023-11-24 13:00:00" },
+            { "event": "Sky diving", "time": "2023-11-22 12:00:00" },
+            { "event": "Cookie event", "time": "2023-11-27 12:00:00" }
+          ]
       }
 
     const selectedEvents = data[selectedLocation];
@@ -35,6 +42,7 @@ const EventForm = () => {
           <select value={selectedLocation} onChange={handleLocationChange}>
             <option value="KA">KA</option>
             <option value="FR">FR</option>
+            <option value="LS">LS</option>
           </select>
         </label>
         <ul>
