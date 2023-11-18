@@ -1,7 +1,10 @@
 import './App.css';
 import LocationPhoto from './MapUI';
+import EventForm from './Component/events';
+import {useState} from 'react'
 
 function App() {
+  const [state, setState] = useState(null)
   const map = 'campus.png';
   const originalRes = {
     height: 1150,
@@ -37,6 +40,10 @@ function App() {
         closestBuildingId = buildings[i].id;
       }
     }
+    if (closest < threshold)
+      setState(closestBuildingId)
+    else
+      setState(null)
 
     // if (closestBuildingId) {
     console.log(`x: ${x}, y:${y}, closest building: ${closestBuildingId}`);
@@ -45,11 +52,10 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <LocationPhoto
-          imageUrl={map}
-          onMapClick={handleMapClick} />
-      </header>
+      <LocationPhoto
+        imageUrl={map}
+        onMapClick={handleMapClick} />
+      <EventForm selected={state}/>
     </div>
   );
 }
