@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { DiReact } from "react-icons/di";
 import '../App.css';
 
@@ -196,6 +196,12 @@ const EventForm = ({selected }) => {
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
             { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null },
             { "event": "Study night", "time": "2023-11-21 17:35:00","info": null  }
+        ],
+        "SC": [
+          { "event": "Speaker event", "time": "2023-11-23 14:35:00","info": null  },
+          { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+          { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+          { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
         ]
       }
       
@@ -210,16 +216,16 @@ const EventForm = ({selected }) => {
       setSelectedEventInfo(null);
     };
 
-    return(
-        
-    <div className={selected ? "event-form-container":"event-form-container-hidden"}>
+  return (
+
+    <div className={selected ? "event-form-container" : "event-form-container-hidden"}>
       <div className="data-list">
         {/* Display events for "KA" */}
         <div className="title-box">
-            <DiReact size={30}/>
-            <h2>Events in {selected}: </h2>
+          <DiReact size={30} />
+          <h2>Events in {selected}: </h2>
         </div>
-        
+
         <ul className="events-List">
           {selectedEvents.map((event, index) => (
             // <li key={index}> {`Event: ${event.event}, Time: ${event.time}`} </li>
