@@ -1,6 +1,7 @@
 import React from "react";
 import './MapUI.css';
-
+import { FaStar } from "react-icons/fa";
+import { FaLocationPin } from "react-icons/fa6";
 
 
 const LocationPhoto = ({ imageUrl, onMapClick}) => {
@@ -98,16 +99,20 @@ const LocationPhoto = ({ imageUrl, onMapClick}) => {
         {Object.entries(coordinates).map(([key, coord]) => (
           <div
             key={key}
+            
             style={{
-              width: '20px',
-              height: '20px',
-              backgroundColor: 'red',
-              borderRadius: '50%',
+              width: '35px',
+              height: '35px',
+              // backgroundColor: 'orange' ,
+              // borderRadius: '50%',
               position: 'absolute',
               left: `${coord.x*widthRatio}px`,
               top: `${coord.y*heightRatio}px`,
             }}
-          ></div>
+          > 
+          <FaStar size={30} color = {'rgb(255,235,20)'} /> 
+          <FaLocationPin size={30}/>
+          </div>
         ))}
       </div>
       <div className="centered-image-wrapper">
