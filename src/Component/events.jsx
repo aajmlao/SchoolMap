@@ -7,11 +7,7 @@ const EventForm = ({selected }) => {
    
     const data = {
         "LM": [
-            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
-            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
-            { "event": "Study night", "time": "2023-11-21 17:35:00" }
+            { "event": "Performing Arts & Social Justice Presents: Boundless", "time": "2023-11-08 08PM-09PM ","link":"https://www.usfca.edu/event/performing-arts-social-justice-presents-boundless/10779106" }
         ],
         "LMP": [
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
@@ -29,17 +25,18 @@ const EventForm = ({selected }) => {
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "LH": [
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "LV": [
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
@@ -71,6 +68,8 @@ const EventForm = ({selected }) => {
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
@@ -93,6 +92,7 @@ const EventForm = ({selected }) => {
             { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "SI": [
@@ -100,12 +100,15 @@ const EventForm = ({selected }) => {
             { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "GL": [
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
@@ -113,6 +116,8 @@ const EventForm = ({selected }) => {
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
@@ -120,6 +125,7 @@ const EventForm = ({selected }) => {
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
@@ -127,70 +133,67 @@ const EventForm = ({selected }) => {
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "CO": [
+            { "event": "Speaker event", "time": "2023-08-03 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-09-21 14:35:00" },
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
-            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "MH": [
-            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Speaker event", "time": "2023-09-20 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
-            { "event": "Study night", "time": "2023-11-21 17:35:00" }
+            { "event": "Riding a horse", "time": "2023-10-18 14:35:00" },
+            { "event": "Speaker event", "time": "2023-09-20 14:35:00" },
+            { "event": "Study night", "time": "2023-11-30 17:35:00" }
         ],
         "MC": [
-            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
-            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
-            { "event": "Study night", "time": "2023-11-21 17:35:00" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" }
         ],
         "TH": [
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "FH": [
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "GI": [
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "HH": [
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "KN": [
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
-            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
-            { "event": "Study night", "time": "2023-11-21 17:35:00" }
+            { "event": "Study night", "time": "2023-11-21 17:35:00" },
+            { "event": "Speaker event", "time": "2023-10-2 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-12-21 14:35:00" },
+            { "event": "Study night", "time": "2023-12-21 17:35:00" }
         ],
         "ZLL": [
             { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
             { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
             { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" },
             { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ]
       }
@@ -213,7 +216,11 @@ const EventForm = ({selected }) => {
           {selectedEvents.map((event, index) => (
             // <li key={index}> {`Event: ${event.event}, Time: ${event.time}`} </li>
             <React.Fragment key={index}>
-            <li>{`Event: ${event.event}`}</li>
+            <li>
+                <a href={event.link} target="_blank" rel="noopener noreferrer">
+                {`Event: ${event.event}`}
+                </a>
+                </li>
             <li>{`Time: ${event.time}`}</li>
         </React.Fragment>
            

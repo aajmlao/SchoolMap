@@ -13,6 +13,7 @@
   /* Include border in the element's total width and height */
   cursor: pointer;
 }
+
 .marker{
   z-index: 100;
 }
