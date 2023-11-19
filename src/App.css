@@ -4,6 +4,13 @@
 }
 
 
+body{
+  background-image: url("google.jpg");
+  background-size: 75%;
+  background-position: 170px 50px;
+}
+
+
 .marker div{
   z-index: 100;
   

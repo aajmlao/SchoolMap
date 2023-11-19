@@ -7,7 +7,7 @@
   /* Hide any overflow to prevent scrolling */
   position: fixed;
   transform: translate(-50%, -50%);
-  border: 2px solid rgb(155, 154, 154);
+  border: 5px dashed rgb(55, 107, 55);
   /* Add a red border */
   box-sizing: border-box;
   /* Include border in the element's total width and height */
