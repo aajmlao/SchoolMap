@@ -7,9 +7,6 @@
   /* Hide any overflow to prevent scrolling */
   position: fixed;
   transform: translate(-50%, -50%);
-  
-  /* Add a red border */
-  box-sizing: border-box;
   /* Include border in the element's total width and height */
   cursor: pointer;
 }
