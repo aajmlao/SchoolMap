@@ -18,6 +18,11 @@ body{
   width: 40px;
 }
 
+
+.event-block{
+  margin-bottom: 15px;
+  
+}
 img {
   position: absolute;
   height: 100vh;
@@ -90,10 +95,40 @@ img {
   color: white;
 
 }
-
-.events-List :nth-child(even){
-  margin-bottom: 15px;
+button{
+  background-color: #fdbb30;
+  border-radius: 10px;
+  padding: 5px;
+  border: white;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00543C;;
 }
+
+.modal{
+  position: absolute;
+  right:0px ;
+  height: 100vh;
+  width: 300px;
+  z-index: 1; 
+  background-color: #00543C; /* Set the background color */
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+  border: 5px solid #fdbb30;
+  border-radius: 10px;
+ 
+}
+.modal-content h3{
+  color:#fdbb30;
+}
+.modal-content p{
+  padding: 15px;
+  font-size:14px;
+  font-weight: 400;
+  color: white;
+  text-align: justify;
+}
+
 
 .events-List li strong {
   display: block;
