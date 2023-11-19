@@ -1,6 +1,9 @@
 import React, {useState} from "react";
+import { DiReact } from "react-icons/di";
+import '../App.css';
 
-const EventForm = ({selected}) => {
+
+const EventForm = ({selected }) => {
    
     const data = {
         "LM": [
@@ -204,11 +207,11 @@ const EventForm = ({selected}) => {
       <div className="data-list">
         {/* Display events for "KA" */}
         <div className="title-box">
-            <i className="fas fa-calendar-alt icon">1</i>
+            <DiReact size={30}/>
             <h2>Events in {selected}: </h2>
         </div>
         
-        <ul>
+        <ul className="events-List">
           {selectedEvents.map((event, index) => (
             <li key={index}>{`Event: ${event.event}, Time: ${event.time}`}</li>
           ))}

@@ -58,25 +58,25 @@ img {
 .data-list.FR {
   transform: translateX(-100%);
 }
-.events-list {
+.events-List {
   list-style: none;
   padding: 0;
 }
 
-.events-list li {
+.events-List li {
   margin-bottom: 15px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(31, 214, 31, 0.1);
   border-radius: 5px;
 }
 
-.events-list li strong {
+.events-List li strong {
   display: block;
   font-size: 18px;
   margin-bottom: 5px;
 }
 
-.events-list li span {
+.events-List li span {
   font-size: 14px;
   color: #ccc;
 }
