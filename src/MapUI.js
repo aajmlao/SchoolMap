@@ -282,7 +282,7 @@ const LocationPhoto = ({ imageUrl, onMapClick}) => {
               // borderRadius: '50%',
               position: 'absolute',
               left: `${coord.x*widthRatio-20}px`,
-              top: `${coord.y*heightRatio-30}px`,
+              top: `${coord.y*heightRatio-45}px`,
             }}
           >
             
