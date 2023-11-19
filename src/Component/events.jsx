@@ -203,7 +203,11 @@ const EventForm = ({selected}) => {
     <div className={selected ? "event-form-container":"event-form-container-hidden"}>
       <div className="data-list">
         {/* Display events for "KA" */}
-        <h2>Events in {selected}:</h2>
+        <div className="title-box">
+            <i className="fas fa-calendar-alt icon">1</i>
+            <h2>Events in {selected}: </h2>
+        </div>
+        
         <ul>
           {selectedEvents.map((event, index) => (
             <li key={index}>{`Event: ${event.event}, Time: ${event.time}`}</li>

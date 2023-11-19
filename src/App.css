@@ -26,9 +26,27 @@ img {
   width: 300px;
   z-index: 1; 
   background-color: #f7f7f7; /* Set the background color */
- 
   overflow: hidden;
   transition: transform 0.3s ease-out;
+  font-size:12px;
+  border: 5px solid rgb(12, 194, 12);
+}
+
+.title-box {
+  background-color: #ffffff; /* Set the background color */
+  color: #c32323; /* Set the text color */
+  padding: 10px; /* Set the padding */
+  border-radius: 5px; /* Set border radius for rounded corners */
+  margin-bottom: 20px; /* Add margin to separate the title box from the rest of the content */
+}
+.icon {
+  margin-right: 10px; /* Adjust the spacing between the icon and the title */
+  width: 14px;
+}
+
+
+.title-box h2 {
+  margin: 0; /* Remove margin to avoid extra spacing inside the title box */
 }
 
 .data-list.FR {
