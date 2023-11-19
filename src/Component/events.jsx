@@ -7,199 +7,208 @@ const EventForm = ({selected }) => {
    
     const data = {
         "LM": [
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-21 14:35:16.927837" }
+            { "event": "Performing Arts & Social Justice Presents: Boundless", "time": "2023-11-08 08PM-09PM ","link":"https://www.usfca.edu/event/performing-arts-social-justice-presents-boundless/10779106","info": null },
+            {"event": "Performing Arts & Social Justice Presents: Boundless", "time": "2023-11-08 08PM-09PM ","link":"https://www.usfca.edu/event/performing-arts-social-justice-presents-boundless/10779106","info": "In USFs fifth annual event honoring Black Catholic History Month, Dr. Ansel Augustine will cultivate an intergenerational conversation about racial justice and the Catholic Church. Dr. Ansel Augustine is an Emmy nominated producer and an award-winning author. He is presently the Director of the Office of Black Catholic Ministries for the Archdiocese of New Orleans. Dr. Augustine also serves on the Board of Trustees of St. Michael’s College (Burlington, Vermont). He is also on the Board of Directors for the Congo Square Preservation Society. He is the former New Orleans Area Director for Vagabond Missions and Executive Director of Cultural Diversity and Outreach for the Archdiocese of Washington. Previously he served as the Associate Director/Coordinator of Black Youth & Young Adult Ministry for the CYO Youth & Young Adult Ministry Office. He is also on the Faculty of the Institute for Black Catholic Studies at Xavier University of Louisiana, Graduate Theological Foundation, and Loyola University New Orleans’ Institute for Ministry. Dr. Augustine has also served as a Campus Minister at Xavier University of Louisiana."}
         ],
         "LMP": [
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-27 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Study Night", "time": "2023-11-23 19:35:00","info": null  },
+            { "event": "Study Lunch", "time": "2023-11-26 14:35:00" ,"info": null }
         ],
         "ST": [
-          { "event": "Riding a horse", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00","info": null  },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00","info": null  },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00","info": null  },
+            { "event": "Study night", "time": "2023-11-21 17:35:00","info": null }
         ],
         "LMR": [
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-18 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "LH": [
-          { "event": "Riding a horse", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00","info": null  },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00","info": null  },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00","info": null  }
         ],
         "LV": [
-          { "event": "Riding a horse", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-19 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-25 14:35:16.927837" }
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00","info": null  },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "LME": [
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-19 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "TC": [
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-24 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00","info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "PT": [
-          { "event": "Riding a horse", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "ED": [
-          { "event": "Riding a horse", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-20 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00","info": null  },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "MA": [
-          { "event": "Riding a horse", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-25 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "KO": [
-          { "event": "Sky diving", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "FR": [
-          { "event": "Jump off the building", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-18 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00","info": null  },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00","info": null  }
         ],
         "SI": [
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-18 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00","info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "GL": [
-          { "event": "Jump off the cliff", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "LS": [
-          { "event": "Riding a horse", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-25 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00","info": null  },
+            { "event": "Study night", "time": "2023-11-21 17:35:00","info": null }
         ],
         "HR": [
-          { "event": "Sky diving", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-19 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00","info": null  },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00","info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "KA": [
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-19 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-27 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00","info": null  },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00","info": null  },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "CO": [
-          { "event": "Riding a horse", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-25 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-08-03 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-09-21 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00","info": null  },
+            { "event": "Study night", "time": "2023-11-21 17:35:00","info": null  }
         ],
         "MH": [
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-19 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-09-20 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-10-18 14:35:00","info": null },
+            { "event": "Speaker event", "time": "2023-09-20 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-30 17:35:00" ,"info": null }
         ],
         "MC": [
-          { "event": "Jump off the cliff", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null }
         ],
         "TH": [
-          { "event": "Riding a horse", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-26 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "FH": [
-          { "event": "Jump off the building", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-26 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00","info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "GI": [
-          { "event": "Sky diving", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-24 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null }
         ],
         "HH": [
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-23 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00","info": null  }
         ],
         "KN": [
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-10-2 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-12-21 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-12-21 17:35:00" ,"info": null }
         ],
         "ZLL": [
-          { "event": "Jump off the building", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00","info": null  },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" ,"info": null },
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" ,"info": null },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" ,"info": null },
+            { "event": "Study night", "time": "2023-11-21 17:35:00","info": null  }
         ]
       }
       
     
 
     let selectedEvents = selected ? data[selected]: [];
+    const [selectedEventInfo, setSelectedEventInfo] = useState(null);
+    const handleLearnMoreClick = (info) => {
+      setSelectedEventInfo(info);
+    };
+    const handleCloseModal = () => {
+      setSelectedEventInfo(null);
+    };
 
     return(
         
@@ -215,13 +224,35 @@ const EventForm = ({selected }) => {
           {selectedEvents.map((event, index) => (
             // <li key={index}> {`Event: ${event.event}, Time: ${event.time}`} </li>
             <React.Fragment key={index}>
-            <li>{`Event: ${event.event}`}</li>
+            <div className="event-block">
+            <li>
+                <a href={event.link} target="_blank" rel="noopener noreferrer">
+                {`Event: ${event.event}`}
+                </a>
+                </li>
             <li>{`Time: ${event.time}`}</li>
+            {event.info && (
+                <li>
+                  <button onClick={() => handleLearnMoreClick(event.info)}>Learn more</button>
+                </li>
+              )}
+            </div>
         </React.Fragment>
            
           ))}
         </ul>
       </div>
+      {/* Modal for displaying additional information */}
+      {selectedEventInfo && (
+        <div className="modal">
+          <div className="modal-content">
+            
+            <h3>Additional Information</h3>
+            <p>{selectedEventInfo}</p>
+            <button onClick={handleCloseModal}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
 
 

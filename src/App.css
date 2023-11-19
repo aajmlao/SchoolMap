@@ -3,23 +3,25 @@
   position: relative;
 }
 
-
 body{
   background-image: url("google.jpg");
   background-size: 75%;
   background-position: 170px 50px;
 }
 
-
 .marker div{
   z-index: 100;
-  
-  /* border-color: #282c34;
-  border: solid rgba(504, 4, 0.612); */
 }
+
 .marker img{
   height: 50px;
   width: 40px;
+}
+
+
+.event-block{
+  margin-bottom: 15px;
+  
 }
 img {
   position: absolute;
@@ -29,6 +31,7 @@ img {
   width: 100%;
   height: 100%;
 }
+
 .event-form-container {
   display: flex;
   transition: 0.5s;
@@ -51,8 +54,8 @@ img {
   font-size:12px;
   border: 5px solid #fdbb30;
   border-radius: 10px;
-  background-image: url("usfca.png");
-  background-repeat: no-repeat;
+  background-image: url("usfca.png"); 
+  background-repeat: no-repeat; 
 
 }
 
@@ -63,11 +66,11 @@ img {
   /* border-radius: 5px; Set border radius for rounded corners */
   margin-bottom: 20px; /* Add margin to separate the title box from the rest of the content */
 }
+
 .icon {
   margin-right: 10px; /* Adjust the spacing between the icon and the title */
   width: 14px;
 }
-
 
 .title-box h2 {
   margin: 0; /* Remove margin to avoid extra spacing inside the title box */
@@ -76,6 +79,7 @@ img {
 .data-list.FR {
   transform: translateX(-100%);
 }
+
 .events-List {
   list-style: none;
   padding: 0;
@@ -91,11 +95,40 @@ img {
   color: white;
 
 }
-
-.events-List :nth-child(even){
-  margin-bottom: 15px;
-  
+button{
+  background-color: #fdbb30;
+  border-radius: 10px;
+  padding: 5px;
+  border: white;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00543C;;
 }
+
+.modal{
+  position: absolute;
+  right:0px ;
+  height: 100vh;
+  width: 300px;
+  z-index: 1; 
+  background-color: #00543C; /* Set the background color */
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+  border: 5px solid #fdbb30;
+  border-radius: 10px;
+ 
+}
+.modal-content h3{
+  color:#fdbb30;
+}
+.modal-content p{
+  padding: 15px;
+  font-size:14px;
+  font-weight: 400;
+  color: white;
+  text-align: justify;
+}
+
 
 .events-List li strong {
   display: block;
