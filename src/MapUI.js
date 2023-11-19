@@ -71,7 +71,7 @@ const LocationPhoto = ({ imageUrl, onMapClick }) => {
           >
 
             <div id="location">
-              <img src='usf_marker.png' />
+              <img src='usf_marker.png' className="marker-hover"/>
             </div>
           </div>
         ))}

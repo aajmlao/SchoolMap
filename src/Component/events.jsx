@@ -3,7 +3,7 @@ import { DiReact } from "react-icons/di";
 import '../App.css';
 import events_data from "../events_list";
 
-const EventForm = ({selected }) => {
+const EventForm = ({selected}) => {
    
     let selectedEvents = selected ? events_data[selected]: [];
     const [selectedEventInfo, setSelectedEventInfo] = useState(null);
@@ -13,6 +13,12 @@ const EventForm = ({selected }) => {
     const handleCloseModal = () => {
       setSelectedEventInfo(null);
     };
+
+    const handleKeyDown = (event) => {
+        if (event.key === 'Escape'||event.key === 'Esc') {
+          handleCloseModal();
+        }
+      };
 
   return (
 
@@ -24,11 +30,11 @@ const EventForm = ({selected }) => {
           <h2>Events in {selected}: </h2>
         </div>
 
-        <ul className="events-List">
+        <ul className="events-List" >
           {selectedEvents.map((event, index) => (
             // <li key={index}> {`Event: ${event.event}, Time: ${event.time}`} </li>
             <React.Fragment key={index}>
-            <div className="event-block">
+            <div className="event-block" >
             <li>
                 <a href={event.link} target="_blank" rel="noopener noreferrer">
                 {`Event: ${event.event}`}
@@ -48,10 +54,11 @@ const EventForm = ({selected }) => {
       </div>
       {/* Modal for displaying additional information */}
       {selectedEventInfo && (
-        <div className="modal">
+        <div className="modal" onKeyDown={handleKeyDown} tabIndex="0">
           <div className="modal-content">
             
-            <h3>Additional Information</h3>
+          <h3 tabIndex="0" ref={(node) => node && node.focus()}>
+                 Additional Information</h3>
             <p>{selectedEventInfo}</p>
             <button onClick={handleCloseModal}>Close</button>
           </div>
@@ -61,6 +68,7 @@ const EventForm = ({selected }) => {
 
 
   );
+  
 };
 
 
