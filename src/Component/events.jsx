@@ -213,7 +213,12 @@ const EventForm = ({selected }) => {
         
         <ul className="events-List">
           {selectedEvents.map((event, index) => (
-            <li key={index}>{`Event: ${event.event}, Time: ${event.time}`}</li>
+            // <li key={index}> {`Event: ${event.event}, Time: ${event.time}`} </li>
+            <React.Fragment key={index}>
+            <li>{`Event: ${event.event}`}</li>
+            <li>{`Time: ${event.time}`}</li>
+        </React.Fragment>
+           
           ))}
         </ul>
       </div>
