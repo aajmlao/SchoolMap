@@ -1,7 +1,9 @@
 import React, {useState} from "react";
-// import data from './events.json'
+import { DiReact } from "react-icons/di";
+import '../App.css';
 
-const EventForm = ({selected}) => {
+
+const EventForm = ({selected }) => {
    
     const data = {
         "LM": [
@@ -195,27 +197,29 @@ const EventForm = ({selected}) => {
         ]
       }
       
-      
+    
 
-
-    const selectedEvents = data[selected];
+    let selectedEvents = selected ? data[selected]: [];
 
     return(
-        <>
-        {selected &&
-        <div className="event-form-container">
+        
+    <div className={selected ? "event-form-container":"event-form-container-hidden"}>
       <div className="data-list">
         {/* Display events for "KA" */}
-        <h2>Events in {selected}:</h2>
-        <ul>
+        <div className="title-box">
+            <DiReact size={30}/>
+            <h2>Events in {selected}: </h2>
+        </div>
+        
+        <ul className="events-List">
           {selectedEvents.map((event, index) => (
             <li key={index}>{`Event: ${event.event}, Time: ${event.time}`}</li>
           ))}
         </ul>
       </div>
     </div>
-    }
-    </>
+
+
   );
 };
 

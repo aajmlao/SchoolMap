@@ -5,6 +5,7 @@ import { useState } from 'react';
 import locations from './location.json'
 
 
+
 function App() {
   const [state, setState] = useState(null)
   const map = 'campus_copy.png';
@@ -22,7 +23,6 @@ function App() {
   const heightRatio = displayedRes.height / originalRes.height;
 
   const buildings = Object.entries(locations).map(([id, coordinates]) => ({ id, x: coordinates[0] * widthRatio, y: coordinates[1] * heightRatio }));
-  console.log(buildings);
 
   const threshold = 25;
 
