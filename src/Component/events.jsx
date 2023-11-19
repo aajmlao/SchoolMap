@@ -7,193 +7,191 @@ const EventForm = ({selected }) => {
    
     const data = {
         "LM": [
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-21 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "LMP": [
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-27 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Study Night", "time": "2023-11-23 19:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-26 14:35:00" }
         ],
         "ST": [
-          { "event": "Riding a horse", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "LMR": [
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-18 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "LH": [
-          { "event": "Riding a horse", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "LV": [
-          { "event": "Riding a horse", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-19 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-25 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "LME": [
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-19 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "TC": [
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-24 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "PT": [
-          { "event": "Riding a horse", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "ED": [
-          { "event": "Riding a horse", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-20 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "MA": [
-          { "event": "Riding a horse", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-25 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "KO": [
-          { "event": "Sky diving", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "FR": [
-          { "event": "Jump off the building", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-18 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "SI": [
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-18 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "GL": [
-          { "event": "Jump off the cliff", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "LS": [
-          { "event": "Riding a horse", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-25 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "HR": [
-          { "event": "Sky diving", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-19 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "KA": [
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-19 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-27 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "CO": [
-          { "event": "Riding a horse", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-25 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "MH": [
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-19 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "MC": [
-          { "event": "Jump off the cliff", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "TH": [
-          { "event": "Riding a horse", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-26 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-26 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "FH": [
-          { "event": "Jump off the building", "time": "2023-11-24 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-26 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "GI": [
-          { "event": "Sky diving", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-18 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Sky diving", "time": "2023-11-24 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "HH": [
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-20 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-23 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "KN": [
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-25 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ],
         "ZLL": [
-          { "event": "Jump off the building", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-21 14:35:16.927837" },
-          { "event": "Jump off the cliff", "time": "2023-11-27 14:35:16.927837" },
-          { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
-          { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" }
+            { "event": "Speaker event", "time": "2023-11-23 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-22 14:35:00" },
+            { "event": "Study Lunch", "time": "2023-11-21 14:35:00" },
+            { "event": "Riding a horse", "time": "2023-11-18 14:35:00" },
+            { "event": "Study night", "time": "2023-11-21 17:35:00" }
         ]
       }
       
