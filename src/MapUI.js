@@ -59,8 +59,8 @@ const LocationPhoto = ({ imageUrl, onMapClick }) => {
             key={key}
 
             style={{
-              width: '35px',
-              height: '35px',
+              width: '25px',
+              height: '25px',
               // backgroundColor: 'orange' ,
               // borderRadius: '50%',
               position: 'absolute',

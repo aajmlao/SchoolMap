@@ -14,8 +14,8 @@ body{
 }
 
 .marker img{
-  height: 50px;
-  width: 40px;
+  height: 40px;
+  width: 30px;
 }
 
 
@@ -39,9 +39,10 @@ img {
   
 }
 
+
 .event-form-container-hidden {
   display: flex;
-  transition: 1s;
+  transition: 0.5s;
   transform: translateX(-100%);
 }
 
@@ -126,6 +127,7 @@ button{
   border-radius: 10px;
   max-height: 3000px;
   overflow-y:auto;
+  
 
 }
 .modal-content h3{
