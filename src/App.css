@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  position: relative;
+}
+.marker div{
+  z-index: 100;
+  /* border-color: #282c34;
+  border: solid rgba(50, 4, 4, 0.612); */
 }
 img {
   position: absolute;
