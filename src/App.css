@@ -35,6 +35,8 @@ img {
 .event-form-container {
   display: flex;
   transition: 0.5s;
+
+  
 }
 
 .event-form-container-hidden {
@@ -56,8 +58,11 @@ img {
   border-radius: 10px;
   background-image: url("usfca.png"); 
   background-repeat: no-repeat; 
+  max-height: 3000px;
+  overflow-y:auto;
 
 }
+
 
 .title-box {
   background-color: #00543C; /* Set the background color */
@@ -83,6 +88,9 @@ img {
 .events-List {
   list-style: none;
   padding: 0;
+  overflow: scroll;
+  scrollbar-color: red orange;
+  scrollbar-width: thin;
 }
 
 .events-List li {
@@ -116,7 +124,9 @@ button{
   transition: transform 0.3s ease-out;
   border: 5px solid #fdbb30;
   border-radius: 10px;
- 
+  max-height: 3000px;
+  overflow-y:auto;
+
 }
 .modal-content h3{
   color:#fdbb30;

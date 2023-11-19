@@ -30,11 +30,11 @@ const EventForm = ({selected}) => {
           <h2>Events in {selected}: </h2>
         </div>
 
-        <ul className="events-List">
+        <ul className="events-List" >
           {selectedEvents.map((event, index) => (
             // <li key={index}> {`Event: ${event.event}, Time: ${event.time}`} </li>
             <React.Fragment key={index}>
-            <div className="event-block">
+            <div className="event-block" >
             <li>
                 <a href={event.link} target="_blank" rel="noopener noreferrer">
                 {`Event: ${event.event}`}
