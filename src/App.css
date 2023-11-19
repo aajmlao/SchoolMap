@@ -51,6 +51,9 @@ img {
   font-size:12px;
   border: 5px solid #fdbb30;
   border-radius: 10px;
+  background-image: url("usfca.png");
+  background-repeat: no-repeat;
+
 }
 
 .title-box {
