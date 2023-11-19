@@ -194,7 +194,14 @@ const EventForm = ({ selected }) => {
       { "event": "Jump off the cliff", "time": "2023-11-27 14:35:16.927837" },
       { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
       { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" }
-    ]
+    ],
+    "SC": [
+      { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
+      { "event": "Sky diving", "time": "2023-11-23 14:35:16.927837" },
+      { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
+      { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
+      { "event": "Sky diving", "time": "2023-11-18 14:35:16.927837" }
+    ],
   }
 
 

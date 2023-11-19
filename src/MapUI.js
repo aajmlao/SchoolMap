@@ -284,6 +284,7 @@ const LocationPhoto = ({ imageUrl, onMapClick }) => {
               position: 'absolute',
               left: `${coord.x * widthRatio - 20}px`,
               top: `${coord.y * heightRatio - 45}px`,
+              cursor: 'pointer'
             }}
           >
 
