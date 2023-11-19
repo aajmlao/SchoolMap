@@ -3,19 +3,19 @@ import './MapUI.css';
 import { FaLocationDot } from "react-icons/fa6";
 
 
-const LocationPhoto = ({ imageUrl, onMapClick}) => {
-    const originalRes = {
-      height: 1150,
-      width: 1528
-    };
-  
-    const displayedRes = {
-      height: 560,
-      width: 750
-    };
-  
-    const widthRatio = displayedRes.width / originalRes.width;
-    const heightRatio = displayedRes.height / originalRes.height;
+const LocationPhoto = ({ imageUrl, onMapClick }) => {
+  const originalRes = {
+    height: 1150,
+    width: 1528
+  };
+
+  const displayedRes = {
+    height: 560,
+    width: 750
+  };
+
+  const widthRatio = displayedRes.width / originalRes.width;
+  const heightRatio = displayedRes.height / originalRes.height;
   const locations = {
     "LM": [688, 261],
     "LMP": [620, 266],
@@ -45,7 +45,7 @@ const LocationPhoto = ({ imageUrl, onMapClick}) => {
     "KN": [483, 1046],
     "ZLL": [603, 1035]
   };
-  const events ={
+  const events = {
     "LM": [
       { "event": "Jump off the building", "time": "2023-11-23 14:35:16.927837" },
       { "event": "Riding a horse", "time": "2023-11-22 14:35:16.927837" },
@@ -236,25 +236,26 @@ const LocationPhoto = ({ imageUrl, onMapClick}) => {
       { "event": "Jump off the building", "time": "2023-11-22 14:35:16.927837" }
     ]
   };
-  
+
   const [coordinates, setCoordinates] = React.useState({});
   React.useEffect(() => {
     const accumulatedCoordinates = {};
     for (const locationKey in locations) {
-      
-        // Check if the location key exists in the events object
-        if (events.hasOwnProperty(locationKey)) {
-          // Get the x and y coordinates for the specified location key from the locations object
-          const [x, y] = locations[locationKey];
-          // setCoordinates({x,y}); 
-          accumulatedCoordinates[locationKey] = { x, y };
-          console.log(`Coordinates for ${locationKey}: x=${x}, y=${y}`);
-        } else {
-          console.log(`Location key "${locationKey}" not found in events`);
-        }
-        setCoordinates(accumulatedCoordinates);
 
-  }} ,[]);
+      // Check if the location key exists in the events object
+      if (events.hasOwnProperty(locationKey)) {
+        // Get the x and y coordinates for the specified location key from the locations object
+        const [x, y] = locations[locationKey];
+        // setCoordinates({x,y}); 
+        accumulatedCoordinates[locationKey] = { x, y };
+        console.log(`Coordinates for ${locationKey}: x=${x}, y=${y}`);
+      } else {
+        console.log(`Location key "${locationKey}" not found in events`);
+      }
+      setCoordinates(accumulatedCoordinates);
+
+    }
+  }, []);
 
   const handleClick = (event) => {
     const container = event.currentTarget;
@@ -269,26 +270,26 @@ const LocationPhoto = ({ imageUrl, onMapClick}) => {
 
   return (
     <div className="location-photo-container" onClick={(event) => handleClick(event)}>
-        <div class = "marker">
+      <div className="marker">
         {/* Map through the coordinates object to render markers */}
         {Object.entries(coordinates).map(([key, coord]) => (
           <div
             key={key}
-            
+
             style={{
               width: '35px',
               height: '35px',
               // backgroundColor: 'orange' ,
               // borderRadius: '50%',
               position: 'absolute',
-              left: `${coord.x*widthRatio-20}px`,
-              top: `${coord.y*heightRatio-30}px`,
+              left: `${coord.x * widthRatio - 20}px`,
+              top: `${coord.y * heightRatio - 30}px`,
             }}
           >
-            
-          <div id="location">
-          <img src='usf_marker.png'/>
-          </div>
+
+            <div id="location">
+              <img src='usf_marker.png' />
+            </div>
           </div>
         ))}
       </div>
@@ -296,7 +297,7 @@ const LocationPhoto = ({ imageUrl, onMapClick}) => {
         <img src={imageUrl} alt="Location" className="location-photo" />
       </div>
     </div>
-    
+
   );
 };
 
