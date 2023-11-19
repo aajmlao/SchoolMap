@@ -17,16 +17,16 @@ const LocationPhoto = ({ imageUrl, onMapClick }) => {
   const widthRatio = displayedRes.width / originalRes.width;
   const heightRatio = displayedRes.height / originalRes.height;
   const locations = {
-    "LM": [688, 261],
+    "LM": [688, 300],
     "LMP": [620, 266],
     "ST": [788, 298],
     "LMR": [832, 299],
     "LH": [878, 257],
-    "LV": [1026, 122],
-    "LME": [1024, 204],
-    "TC": [1261, 388],
-    "PT": [1251, 438],
-    "ED": [1256, 499],
+    "LV": [1050, 99],
+    "LME": [1024, 300],
+    "TC": [1261, 368],
+    "PT": [1321, 438],
+    "ED": [1306, 499],
     "MA": [1423, 470],
     "KO": [262, 695],
     "FR": [523, 760],
@@ -37,7 +37,7 @@ const LocationPhoto = ({ imageUrl, onMapClick }) => {
     "KA": [743, 937],
     "CO": [808, 854],
     "MH": [879, 883],
-    "MC": [835, 818],
+    "MC": [929, 818],
     "TH": [981, 817],
     "FH": [964, 946],
     "GI": [1111, 770],
@@ -283,7 +283,7 @@ const LocationPhoto = ({ imageUrl, onMapClick }) => {
               // borderRadius: '50%',
               position: 'absolute',
               left: `${coord.x * widthRatio - 20}px`,
-              top: `${coord.y * heightRatio - 30}px`,
+              top: `${coord.y * heightRatio - 45}px`,
             }}
           >
 
