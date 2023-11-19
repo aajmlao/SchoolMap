@@ -11,10 +11,10 @@
   /* Add a red border */
   box-sizing: border-box;
   /* Include border in the element's total width and height */
-  cursor: pointer;
+  cursor: default;
 }
 
-.marker{
+.marker {
   z-index: 100;
 }
 
