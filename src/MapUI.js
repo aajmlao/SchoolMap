@@ -1,7 +1,6 @@
 import React from "react";
 import './MapUI.css';
-import { FaStar } from "react-icons/fa";
-import { FaLocationPin } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 
 
 const LocationPhoto = ({ imageUrl, onMapClick}) => {
@@ -106,12 +105,13 @@ const LocationPhoto = ({ imageUrl, onMapClick}) => {
               // backgroundColor: 'orange' ,
               // borderRadius: '50%',
               position: 'absolute',
-              left: `${coord.x*widthRatio}px`,
+              left: `${coord.x*widthRatio-10}px`,
               top: `${coord.y*heightRatio}px`,
             }}
-          > 
-          <FaStar size={30} color = {'rgb(255,235,20)'} /> 
-          <FaLocationPin size={30}/>
+          >
+          <div id="location">
+          <FaLocationDot size={40}/>
+          </div>
           </div>
         ))}
       </div>

@@ -5,7 +5,12 @@
 .marker div{
   z-index: 100;
   /* border-color: #282c34;
-  border: solid rgba(50, 4, 4, 0.612); */
+  border: solid rgba(504, 4, 0.612); */
+}
+#location{
+  color: rgb(227, 74, 60);
+  
+  
 }
 img {
   position: absolute;
