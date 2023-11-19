@@ -8,7 +8,7 @@ import locations from './location.json'
 
 function App() {
   const [state, setState] = useState(null)
-  const map = 'campus.png';
+  const map = 'campus_copy.png';
   const originalRes = {
     height: 1150,
     width: 1528
@@ -47,7 +47,9 @@ function App() {
   }
 
   return (
+    
     <div className="App">
+      
       <LocationPhoto
         imageUrl={map}
         onMapClick={handleMapClick} />
